@@ -1,0 +1,48 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+  font-family: Arial, sans-serif;
+}
+
+.splash {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle, #111 0%, #000 100%);
+  overflow: hidden;
+}
+
+.coin {
+  position: absolute;
+  top: -50px;
+  font-size: 2rem;
+  animation: fall 3s linear infinite;
+}
+
+.argento-logo {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00ffff;
+  font-weight: bold;
+}
+
+.dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 2rem;
+  color: #00ff88;
+  background: #111;
+}
+
+@keyframes fall {
+  0% { top: -50px; }
+  100% { top: 100vh; }
+}
